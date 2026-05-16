@@ -14,4 +14,8 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include=".github\workflows\check.yml" />
+    </ItemGroup>
+
 </Project>
