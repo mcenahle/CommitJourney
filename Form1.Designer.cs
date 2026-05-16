@@ -135,7 +135,7 @@ partial class Form1
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         ShowIcon = false;
-        Text = "CommitJourney";
+        Text = "CommitJourney - v0.1.0";
         ResumeLayout(false);
         PerformLayout();
     }
