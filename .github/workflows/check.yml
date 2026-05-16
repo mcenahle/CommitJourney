@@ -16,7 +16,7 @@ permissions:
 
 env:
   DOTNET_VERSION: "8.0.x"
-  PROJECT_PATH: "CommitJourney/CommitJourney.csproj"
+  PROJECT_PATH: "CommitJourney.csproj"
   APP_NAME: "CommitJourney"
 
 jobs:
