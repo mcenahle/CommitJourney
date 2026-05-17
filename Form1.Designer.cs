@@ -29,6 +29,7 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         btnChoosePath = new System.Windows.Forms.Button();
         label1 = new System.Windows.Forms.Label();
         txtRepoPath = new System.Windows.Forms.TextBox();
@@ -112,11 +113,11 @@ partial class Form1
         // label3
         // 
         label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        label3.Location = new System.Drawing.Point(559, 494);
+        label3.Location = new System.Drawing.Point(312, 494);
         label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(229, 38);
+        label3.Size = new System.Drawing.Size(476, 38);
         label3.TabIndex = 7;
-        label3.Text = "© 2026 Mcenahle.";
+        label3.Text = "© 2026 Mcenahle. Licensed under MIT.";
         label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
         // 
         // Form1
@@ -133,9 +134,10 @@ partial class Form1
         Controls.Add(label1);
         Controls.Add(btnChoosePath);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+        Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         MaximizeBox = false;
         ShowIcon = false;
-        Text = "CommitJourney - v0.1.0";
+        Text = "CommitJourney - v0.1.1";
         ResumeLayout(false);
         PerformLayout();
     }
