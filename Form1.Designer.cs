@@ -147,7 +147,7 @@ partial class Form1
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         ShowIcon = false;
-        Text = "CommitJourney - v0.1.1";
+        Text = "CommitJourney - v0.1.1-hotfix";
         groupBox1.ResumeLayout(false);
         ResumeLayout(false);
         PerformLayout();
