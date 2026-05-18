@@ -29,7 +29,6 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         btnChoosePath = new System.Windows.Forms.Button();
         label1 = new System.Windows.Forms.Label();
         txtRepoPath = new System.Windows.Forms.TextBox();
@@ -38,6 +37,8 @@ partial class Form1
         label2 = new System.Windows.Forms.Label();
         rtbOutput = new System.Windows.Forms.TextBox();
         label3 = new System.Windows.Forms.Label();
+        groupBox1 = new System.Windows.Forms.GroupBox();
+        groupBox1.SuspendLayout();
         SuspendLayout();
         // 
         // btnChoosePath
@@ -62,19 +63,19 @@ partial class Form1
         // 
         // txtRepoPath
         // 
-        txtRepoPath.Location = new System.Drawing.Point(155, 16);
+        txtRepoPath.Location = new System.Drawing.Point(12, 62);
         txtRepoPath.Name = "txtRepoPath";
         txtRepoPath.ReadOnly = true;
         txtRepoPath.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-        txtRepoPath.Size = new System.Drawing.Size(428, 38);
+        txtRepoPath.Size = new System.Drawing.Size(776, 38);
         txtRepoPath.TabIndex = 2;
         // 
         // btnExportLog
         // 
         btnExportLog.FlatStyle = System.Windows.Forms.FlatStyle.System;
-        btnExportLog.Location = new System.Drawing.Point(12, 84);
+        btnExportLog.Location = new System.Drawing.Point(6, 43);
         btnExportLog.Name = "btnExportLog";
-        btnExportLog.Size = new System.Drawing.Size(338, 89);
+        btnExportLog.Size = new System.Drawing.Size(361, 77);
         btnExportLog.TabIndex = 3;
         btnExportLog.Text = "导出 Git Log";
         btnExportLog.UseVisualStyleBackColor = true;
@@ -83,9 +84,9 @@ partial class Form1
         // btnExportCsv
         // 
         btnExportCsv.FlatStyle = System.Windows.Forms.FlatStyle.System;
-        btnExportCsv.Location = new System.Drawing.Point(450, 84);
+        btnExportCsv.Location = new System.Drawing.Point(409, 43);
         btnExportCsv.Name = "btnExportCsv";
-        btnExportCsv.Size = new System.Drawing.Size(338, 89);
+        btnExportCsv.Size = new System.Drawing.Size(361, 77);
         btnExportCsv.TabIndex = 4;
         btnExportCsv.Text = "导出每日统计 CSV";
         btnExportCsv.UseVisualStyleBackColor = true;
@@ -93,7 +94,7 @@ partial class Form1
         // 
         // label2
         // 
-        label2.Location = new System.Drawing.Point(12, 196);
+        label2.Location = new System.Drawing.Point(12, 243);
         label2.Name = "label2";
         label2.Size = new System.Drawing.Size(163, 37);
         label2.TabIndex = 5;
@@ -102,7 +103,7 @@ partial class Form1
         // 
         // rtbOutput
         // 
-        rtbOutput.Location = new System.Drawing.Point(12, 236);
+        rtbOutput.Location = new System.Drawing.Point(12, 283);
         rtbOutput.Multiline = true;
         rtbOutput.Name = "rtbOutput";
         rtbOutput.ReadOnly = true;
@@ -113,34 +114,46 @@ partial class Form1
         // label3
         // 
         label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        label3.Location = new System.Drawing.Point(312, 494);
+        label3.Location = new System.Drawing.Point(312, 541);
         label3.Name = "label3";
         label3.Size = new System.Drawing.Size(476, 38);
         label3.TabIndex = 7;
         label3.Text = "© 2026 Mcenahle. Licensed under MIT.";
         label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
         // 
+        // groupBox1
+        // 
+        groupBox1.Controls.Add(btnExportCsv);
+        groupBox1.Controls.Add(btnExportLog);
+        groupBox1.Location = new System.Drawing.Point(12, 106);
+        groupBox1.Name = "groupBox1";
+        groupBox1.Size = new System.Drawing.Size(776, 134);
+        groupBox1.TabIndex = 8;
+        groupBox1.TabStop = false;
+        groupBox1.Text = "导出框";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 541);
+        ClientSize = new System.Drawing.Size(800, 588);
+        Controls.Add(groupBox1);
         Controls.Add(label3);
         Controls.Add(rtbOutput);
         Controls.Add(label2);
-        Controls.Add(btnExportCsv);
-        Controls.Add(btnExportLog);
         Controls.Add(txtRepoPath);
         Controls.Add(label1);
         Controls.Add(btnChoosePath);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-        Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         MaximizeBox = false;
         ShowIcon = false;
         Text = "CommitJourney - v0.1.1";
+        groupBox1.ResumeLayout(false);
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.GroupBox groupBox1;
 
     private System.Windows.Forms.Label label3;
 
