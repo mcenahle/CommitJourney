@@ -30,7 +30,10 @@ public partial class Form1 : Form
 
             if (string.IsNullOrWhiteSpace(repoPath))
             {
-                MessageBox.Show("请先选择 Git 仓库！");
+                MessageBox.Show("请先选择 Git 仓库！",
+                    "Commit Journey",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 return;
             }
 
@@ -83,7 +86,10 @@ public partial class Form1 : Form
 
         if (string.IsNullOrWhiteSpace(repoPath))
         {
-            MessageBox.Show("请先选择 Git 仓库！");
+            MessageBox.Show("请先选择 Git 仓库！",
+                "Commit Journey",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
             return;
         }
 
